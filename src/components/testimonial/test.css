@@ -1,0 +1,29 @@
+.test-con{
+    width: 50%;
+}
+.client-img{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: .4rem solid var(--first-alt-color);
+    margin: 0 auto 1rem;
+}
+.test{
+    background: var(--first-color);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+.test small{
+    width: 80%;
+    margin: .8rem auto 0;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 600px){
+    .test-con{
+        width: 70%;
+    }
+    
+}

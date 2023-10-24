@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+:root{
+--first-color: rgb(124, 116, 173);
+--first-alt-color: rgb(103, 127, 205);
+--body-color: #2c2c3a;
+--light-color: lightgrey;
+
+--container-width-lg: 75%;
+--container-width-md: 86%;
+--container-width-sm: 90%;
+
+--transition: all 400ms ease;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,h2,h3{
+    font-weight: 500;
+}
+h1{
+    font-size: 2.5rem;
+}
+section{
+    margin-top: 12rem;
+}
+section > h2,
+section > h5{
+    text-align: center;
+    color: var(--light-color);
+}
+section > h2{
+    color: var(--first-color);
+    margin-bottom: 3rem;
+}
+.text-light{
+    color: var(--light-color);
+}
+a{
+    color: var(--first-color);
+    transition: var(--transition);
+}
+a:hover{
+    color: #fff;
+}
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--first-color);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--first-color);
+    transition: var(--transition);
+}
+.btn:hover{
+    background: #fff;
+    color: var(--body-color);
+    border-color: transparent;
+}
+.btn-primary{
+    background: var(--first-color);
+    color: var(--body-color);
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  Responsive */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+} 
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+} 

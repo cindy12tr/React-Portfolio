@@ -1,0 +1,53 @@
+.cv-con{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+.cv-item{
+    background: var(--first-color);
+    padding: 1.3rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: 3s;
+}
+.cv-item:hover{
+    background: transparent;
+    border-color: var(--first-color);
+}
+.cv-img{
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.cv-item h3{
+    margin: 1rem 0;
+}
+.cv-btn{
+    display: flex;
+    gap: .5rem;
+    
+}
+.cv-btn .btn{
+border-color: #fff;
+color: #fff;
+}
+.cv-btn .btn-primary{
+    background: rgb(239, 239, 239);
+    border-color: transparent;
+    color: var(--body-color);
+}
+
+@media screen and (max-width: 1024px) {
+.cv-con{
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+}
+    
+@media screen and (max-width: 600px) {
+    .cv-con{
+        grid-template-columns: 350px;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    }
